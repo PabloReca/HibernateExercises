@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.ProductsEntity" table="Products" schema="Northwind">
+        <id name="productId" column="ProductID"/>
+        <property name="productName" column="ProductName"/>
+        <property name="supplierId" column="SupplierID"/>
+        <property name="categoryId" column="CategoryID"/>
+        <property name="quantityPerUnit" column="QuantityPerUnit"/>
+        <property name="unitPrice" column="UnitPrice"/>
+        <property name="unitsInStock" column="UnitsInStock"/>
+        <property name="unitsOnOrder" column="UnitsOnOrder"/>
+        <property name="reorderLevel" column="ReorderLevel"/>
+        <property name="discontinued" column="Discontinued"/>
+    </class>
+</hibernate-mapping>
