@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  MySQL_DAM:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "4400:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+
+  mysqladmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: MySQL_DAM
+      MYSQL_ROOT_PASSWORD: 1234
+
+volumes:
+  mysql_data:
