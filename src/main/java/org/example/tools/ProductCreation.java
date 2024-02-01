@@ -1,4 +1,4 @@
-package org.example.test;
+package org.example.tools;
 
 import entity.ProductsEntity;
 import org.hibernate.Session;

@@ -1,4 +1,4 @@
-package org.example.test;
+package org.example.tools;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
