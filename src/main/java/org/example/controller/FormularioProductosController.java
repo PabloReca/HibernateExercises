@@ -1,6 +1,7 @@
-package org.example;
+package org.example.controller;
 
-import entity.ProductsEntity;
+import org.example.model.ProductsEntity;
+import org.example.view.FormularioProductosView;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.controller.FormularioProductosController;
+import org.example.view.FormularioProductosView;
+
 import javax.swing.*;
 import java.awt.*;
 
