@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="entity.ProductsEntity" table="Products" schema="Northwind">
+    <class name="org.example.model.ProductsEntity" table="Products" schema="Northwind">
         <id name="productId" column="ProductID"/>
         <property name="productName" column="ProductName"/>
         <property name="supplierId" column="SupplierID"/>
